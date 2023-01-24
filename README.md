@@ -31,6 +31,6 @@ Second video shows  GET routes for all categories, all products, and all tags be
 Third video shows  POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia Core<br>
 ![alt text](assets/video/Untitled_-Jan-24_-2023-12_48-PM.gif)
 ## Relevant Links
-Link video :<br>
+Link video :<br> https://drive.google.com/file/d/1hLafAsMmcceYubluUmyN54wSYPYczQzX/view
 
-Github Repo:<br> 
+Github Repo:<br> https://github.com/Mary90272/E-commerce-Back-End
