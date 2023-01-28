@@ -6,52 +6,38 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // get all products
 router.get('/', (req, res) => {
   // find all products
-  // be sure to include its associated Category and Tag data
   Product.findAll({
-    include: [
-      {
-        model: Category,
-        as: 'category'
-      },
-      {
-        model: Tag,
-        as: 'tags',
-        through: {
-          attributes: []
-        }
-      }
-    ]
-  }).then((products) => {
-    // Do something with the products and their associated category and tags here...
-    res.status(200).json(products)
+    // be sure to include its associated Category and Tag data
+    include: [{model:Category}, {model:Tag}]
+  })
+  .then (productData => res.json(productData))
+  .catch (err => {
+    // console.log(err);
+    res.status(500).json(err);
   });
-
 });
 
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
-  // be sure to include its associated Category and Tag data
-  const id = req.params.id;
-  Product.findByPk(id, {
-    include: [
-      {
-        model: Category,
-        as: 'category'
-      },
-      {
-        model: Tag,
-        as: 'tags',
-        through: {
-          attributes: []
-        }
-      }
-    ]
-  }).then((product) => {
-    // Do something with the product and its associated category and tags here...
-    res.status(200).json(product)
-  });
-
+  Product.findOne({
+    where: {
+      id: req.params.id,
+    },
+      // be sure to include its associated Category and Tag data
+    include: [{model:Category},{model:Tag}]
+  })
+  .then (productData => {
+    if (!productData){
+      res.status(404).json({massage: 'No product found with this id'});
+      return;
+    }
+    res.json(productData);
+  })
+  .catch (err => {
+    // console.log(err);
+    res.status(500).json(err);
+  })
 });
 
 // create new product
@@ -129,19 +115,22 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  const id = req.params.id;
   // delete one product by its `id` value
-  Product.destroy({
-    where: {
-      id: id
-    }
-  }).then(() => {
-    // The product was deleted successfully
-    res.status(201).json({ message: "Deleted Successfully" })
-  }).catch(err => {
-    console.log(err);
-  });
-
+Product.destroy({
+  where: {
+    id: req.params.id
+  }
+})
+.then (productData => {
+  if (!productData) {
+    res.status(404).json({massage: 'No product found with this id'});
+    return;
+  }
+  res.json(productData);
+})
+.catch (err => {
+  res.status(500).json(err);
+});
 });
 
 module.exports = router;
