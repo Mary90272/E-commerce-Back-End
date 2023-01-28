@@ -41,5 +41,8 @@ Video shows  POST, PUT, and DELETE routes in Insomnia <br>
 ![alt text](assets/video/Untitled_-Jan-28_-2023-2_50-PM.gif)
 ## Relevant Links
 Link video :<br>
-
+https://drive.google.com/file/d/1937Qf_WpADf43JFJ-vnlIgDfw9TngJbW/view
+<br>
+https://drive.google.com/file/d/1gsTMWNTDpBu2Y-gBcrJpYjclfoh5Go3T/view
 Github Repo:<br> 
+https://github.com/Mary90272/E-commerce-Back-End
