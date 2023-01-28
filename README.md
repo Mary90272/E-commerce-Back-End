@@ -22,15 +22,24 @@ Open VsCode Terminal<br>
 ## Usage
 To run project on local mashine you also need to change password<br>
 in .env file to your personal (Mysql) password<br>
-
+## Images of Deployed Application
+For all categories,all products,all tags<br>
+![alt text](assets/images/tags.png)
+![alt text](assets/images/products.png)
+![alt text](assets/images/categories.png)
+For single category, product,tags<br>
+![alt text](assets/images/categories_each.png)
+![alt text](assets/images/product_each.png)
+![alt text](assets/images/tags_each.png)
+Images for POST PUT DELETE 
 ## Video showing the functionality of the application
-First video shows all requests in local machine<br>
-![alt text](assets/video/Untitled_-Jan-23_-2023-10_35-PM.gif)
-Second video shows  GET routes for all categories, all products, and all tags being tested in Insomnia Core<br>
-![alt text](assets/video/Untitled_-Jan-24_-2023-12_16-PM.gif)
-Third video shows  POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia Core<br>
-![alt text](assets/video/Untitled_-Jan-24_-2023-12_48-PM.gif)
-## Relevant Links
-Link video :<br> https://drive.google.com/file/d/1hLafAsMmcceYubluUmyN54wSYPYczQzX/view
 
-Github Repo:<br> https://github.com/Mary90272/E-commerce-Back-End
+ Video shows  GET routes to return  all categories, all products, and all tags<br>
+ And return single categories, single products,single tags<br>
+![alt text](assets/video/Untitled_-Jan-28_-2023-2_18-PM.gif)
+Video shows  POST, PUT, and DELETE routes in Insomnia <br>
+![alt text](assets/video/Untitled_-Jan-28_-2023-2_50-PM.gif)
+## Relevant Links
+Link video :<br>
+
+Github Repo:<br> 
