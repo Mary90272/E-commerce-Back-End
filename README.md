@@ -32,18 +32,11 @@ For single category, product,tags<br>
 ![alt text](assets/images/product_each.png)
 ![alt text](assets/images/tags_each.png)
 Images for POST PUT DELETE 
-## Video showing the functionality of the application
 
- Video shows  GET routes to return  all categories, all products, and all tags<br>
- And return single categories, single products,single tags<br>
-![alt text](assets/video/Untitled_-Jan-28_-2023-2_18-PM.gif)
-Video shows  POST, PUT, and DELETE routes in Insomnia <br>
-![alt text](assets/video/Untitled_-Jan-28_-2023-2_50-PM.gif)
+
+
 ## Relevant Links
 Link video :<br>
-https://drive.google.com/file/d/1937Qf_WpADf43JFJ-vnlIgDfw9TngJbW/view
-<br>
-https://drive.google.com/file/d/1gsTMWNTDpBu2Y-gBcrJpYjclfoh5Go3T/view
-<br>
+https://watch.screencastify.com/v/zlMlTJde8bH3sHx8llFP
 Github Repo:<br> 
 https://github.com/Mary90272/E-commerce-Back-End
