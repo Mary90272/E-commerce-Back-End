@@ -31,7 +31,7 @@ For single category, product,tags<br>
 ![alt text](assets/images/categories_each.png)
 ![alt text](assets/images/product_each.png)
 ![alt text](assets/images/tags_each.png)
-Images for POST PUT DELETE 
+ 
 
 
 
