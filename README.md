@@ -37,6 +37,6 @@ For single category, product,tags<br>
 
 ## Relevant Links
 Link video :<br>
-https://watch.screencastify.com/v/zlMlTJde8bH3sHx8llFP<br>
+https://github.com/Mary90272/E-commerce-Back-End
 Github Repo:<br> 
 https://github.com/Mary90272/E-commerce-Back-End
